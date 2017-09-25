@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 
 //var Customer = require('./models/customer.schema.js');
 //var Stock = require('./models/stockprice.schema.js');
+//var View = require('./models/view.schema.js');
 
 var mongoose = require('mongoose');
 
@@ -163,7 +164,79 @@ var newStock10 = Stock({
         price: "9000"
 });
 newStock10.save(function(err){console.log(err);});
+
+//Viwes
+newView1 = View({
+        cid: 1,
+        latitude: "40.91143695",
+        longitude: "-74.04441833"
+})
+newView1.save(function(err){console.log(err);});
+
+newView2 = View({
+        cid: 2,
+        latitude: "28.394857",
+        longitude: "84.124008"
+})
+newView2.save(function(err){console.log(err);});
+
+newView3 = View({
+        cid: 3,
+        latitude: "28.41314415",
+        longitude: "84.21363831"
+})
+newView3.save(function(err){console.log(err);});
+
+newView4 = View({
+        cid: 4,
+        latitude: "28.47352011",
+        longitude: "83.92799377"
+})
+newView4.save(function(err){console.log(err);});
+
+newView5 = View({
+        cid: 5,
+        latitude: "28.49524701",
+        longitude: "84.31938171"
+})
+newView5.save(function(err){console.log(err);});
+
+newView6 = View({
+        cid: 6,
+        latitude: "28.30800793",
+        longitude: "83.8483429"
+})
+newView6.save(function(err){console.log(err);});
+
+newView7 = View({
+        cid: 7,
+        latitude: "28.41314415",
+        longitude: "84.21363831"
+})
+newView7.save(function(err){console.log(err);});
+
+newView8 = View({
+        cid: 8,
+        latitude: "28.41314415",
+        longitude: "84.21363831"
+})
+newView8.save(function(err){console.log(err);});
+
+newView9 = View({
+        cid: 9,
+        latitude: "28.41314415",
+        longitude: "84.21363831"
+})
+newView9.save(function(err){console.log(err);});
+
+newView10 = View({
+        cid: 10,
+        latitude: "28.41314415",
+        longitude: "84.21363831"
+})
+newView10.save(function(err){console.log(err);});
 */
+
 
 app.use(bodyParser.json());
 app.use(allowCrossDomain);

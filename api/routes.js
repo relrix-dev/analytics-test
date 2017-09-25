@@ -13,7 +13,7 @@ router.get('/customers', customerController.getCustomer);
 //StockPrice
 router.get('/stock/10', stockpriceController.getStockPrice);
 
-/*View
-router.get('/view/', viewController.getView); */
+///View
+router.get('/views', viewController.getViews); 
 
  
