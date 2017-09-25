@@ -9,10 +9,11 @@ module.exports = router;
 
 //Customer
 router.get('/customers', customerController.getCustomer); 
+router.get('/customer/:cid', customerController.getCid);
 
 //StockPrice
-router.get('/stock/10', stockpriceController.getStockPrice);
-
+router.get('/stock/', stockpriceController.getStockPrice);
+router.get('/stock/sum', stockpriceController.getSumPrice);
 ///View
 router.get('/views', viewController.getViews); 
 
