@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 
-var Customer = require('./models/customer.schema.js');
-var Stock = require('./models/stockprice.schema.js');
+//var Customer = require('./models/customer.schema.js');
+//var Stock = require('./models/stockprice.schema.js');
 
 var mongoose = require('mongoose');
 
@@ -21,7 +21,7 @@ var allowCrossDomain = function(req, res, next) {
 
 
 //Customer
-
+/*
 var newCustomer1 = Customer({
     cid: 1,
     name: "Sanat",
@@ -163,7 +163,7 @@ var newStock10 = Stock({
         price: "9000"
 });
 newStock10.save(function(err){console.log(err);});
-
+*/
 
 app.use(bodyParser.json());
 app.use(allowCrossDomain);

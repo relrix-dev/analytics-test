@@ -8,7 +8,7 @@ const viewController = require('./controllers/view.controller');
 module.exports = router;
 
 //Customer
-router.get('/customer', customerController.getCustomer); 
+router.get('/customers', customerController.getCustomer); 
 
 //StockPrice
 router.get('/stock/10', stockpriceController.getStockPrice);
