@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 
 //var Customer = require('./models/customer.schema.js');
-//var Stock = require('./models/stockprice.schema.js');
+var Stock = require('./models/stockprice.schema.js');
 //var View = require('./models/view.schema.js');
 
 var mongoose = require('mongoose');
@@ -102,7 +102,7 @@ var newCustomer10 = Customer({
     email: "Rahul@gmail.com"
 });
 newCustomer10.save(function(err){ console.log(err); });
-
+*/
 
 //StockPrice
 var newStock1 = Stock({
@@ -141,40 +141,40 @@ var newStock5 = Stock({
 newStock5.save(function(err){console.log(err);});
 
 var newStock6 = Stock({
-        bank : "nibl",
+        bank : "nic",
         date: "20/09/2017",
         price: "27000"
 });
 newStock6.save(function(err){console.log(err);});
 
 var newStock7 = Stock({
-        bank : "nibl",
+        bank : "nic",
         date: "21/09/2017",
         price: "30000"
 });
 newStock7.save(function(err){console.log(err);});
 
 var newStock8 = Stock({
-        bank : "nibl",
+        bank : "nic",
         date: "22/09/2017",
         price: "20000"
 });
 newStock8.save(function(err){console.log(err);});
 
 var newStock9 = Stock({
-        bank : "nibl",
+        bank : "sunrise",
         date: "23/09/2017",
         price: "23000"
 });
 newStock9.save(function(err){console.log(err);});
 
 var newStock10 = Stock({
-        bank : "nibl",
+        bank : "nic",
         date: "24/09/2017",
         price: "9000"
 });
 newStock10.save(function(err){console.log(err);});
-
+/*
 //Viwes
 newView1 = View({
         cid: 1,

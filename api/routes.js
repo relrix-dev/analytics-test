@@ -14,6 +14,7 @@ router.get('/customer/:cid', customerController.getCid);
 //StockPrice
 router.get('/stock/', stockpriceController.getStockPrice);
 router.get('/stock/totalcustomers', stockpriceController.getTotalCustomers);
+router.put('/stock/updated', stockpriceController.updateStock)
 
 ///View
 router.get('/views', viewController.getViews); 
