@@ -102,64 +102,74 @@ var newCustomer10 = Customer({
     email: "Rahul@gmail.com"
 });
 newCustomer10.save(function(err){ console.log(err); });
-  
+
 
 //StockPrice
 var newStock1 = Stock({
+        bank : "nibl",
         date: "15/09/2017",
         price: "10000"
 });
 newStock1.save(function(err){console.log(err);});
 
 var newStock2 = Stock({
+        bank : "nibl",
         date: "16/09/2017",
         price: "20000"
 });
 newStock2.save(function(err){console.log(err);});
 
 var newStock3 = Stock({
+        bank : "nibl",
         date: "17/09/2017",
         price: "19000"
 });
 newStock3.save(function(err){console.log(err);});
 
 var newStock4 = Stock({
+        bank : "nibl",
         date: "18/09/2017",
         price: "21000"
 });
 newStock4.save(function(err){console.log(err);});
 
 var newStock5 = Stock({
+        bank : "nibl",
         date: "19/09/2017",
         price: "25000"
 });
 newStock5.save(function(err){console.log(err);});
 
 var newStock6 = Stock({
+        bank : "nibl",
         date: "20/09/2017",
         price: "27000"
 });
 newStock6.save(function(err){console.log(err);});
 
 var newStock7 = Stock({
+        bank : "nibl",
         date: "21/09/2017",
         price: "30000"
 });
 newStock7.save(function(err){console.log(err);});
 
 var newStock8 = Stock({
+        bank : "nibl",
         date: "22/09/2017",
         price: "20000"
 });
 newStock8.save(function(err){console.log(err);});
 
 var newStock9 = Stock({
+        bank : "nibl",
         date: "23/09/2017",
         price: "23000"
 });
 newStock9.save(function(err){console.log(err);});
 
 var newStock10 = Stock({
+        bank : "nibl",
         date: "24/09/2017",
         price: "9000"
 });

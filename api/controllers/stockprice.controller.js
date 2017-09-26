@@ -2,7 +2,7 @@ var Stocks = require('../models/stockprice.schema.js');
 
 module.exports = {
     getStockPrice: getStockPrice,  
-    getSumPrice: getSumPrice,
+    getTotalCustomers: getTotalCustomers,
    
 }
 
@@ -12,10 +12,8 @@ function getStockPrice(req,res){
      });
 }
 
-function getSumPrice(req,res){
-     var sum = req.params.price;
-     Stocks.aggregate({price: {$sum: price}} function(err, docs){
+function getTotalCustomers(req,res){
+        Stocks.aggregate([{$group:{_id:"$bank",totalCustomers:{$sum:1}}}], function(err, docs){
         res.json(docs);
-        console.log(sum);
-     }); 
+     });
 }

@@ -13,7 +13,8 @@ router.get('/customer/:cid', customerController.getCid);
 
 //StockPrice
 router.get('/stock/', stockpriceController.getStockPrice);
-router.get('/stock/sum', stockpriceController.getSumPrice);
+router.get('/stock/totalcustomers', stockpriceController.getTotalCustomers);
+
 ///View
 router.get('/views', viewController.getViews); 
 

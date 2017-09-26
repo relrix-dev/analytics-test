@@ -2,6 +2,9 @@ var mongoose = require('mongoose');
 var schema = mongoose.Schema;
 
 var stockSchema = new schema({
+    bank:{
+        type: String,
+    },
     date:{
         type: String,
     },
